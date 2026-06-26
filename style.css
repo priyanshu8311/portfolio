@@ -1440,3 +1440,52 @@ opacity:1 !important;
 transform:translateY(0) !important;
 
 }
+/* ==========================
+   BACK TO TOP BUTTON
+========================== */
+
+#topBtn{
+
+position:fixed;
+
+right:30px;
+
+bottom:30px;
+
+width:55px;
+
+height:55px;
+
+display:none;
+
+align-items:center;
+
+justify-content:center;
+
+border:none;
+
+border-radius:50%;
+
+background:#2563eb;
+
+color:white;
+
+font-size:22px;
+
+cursor:pointer;
+
+z-index:999;
+
+box-shadow:0 10px 30px rgba(37,99,235,.4);
+
+transition:.35s;
+
+}
+
+#topBtn:hover{
+
+transform:translateY(-8px) scale(1.08);
+
+background:#1d4ed8;
+
+}
