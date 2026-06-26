@@ -1385,3 +1385,26 @@ color:white;
 /* ==========================================
 END OF CSS
 ========================================== */
+#typing{
+
+color:#3b82f6;
+
+font-weight:700;
+
+border-right:3px solid #3b82f6;
+
+padding-right:6px;
+
+animation:blink .8s infinite;
+
+}
+
+@keyframes blink{
+
+50%{
+
+border-color:transparent;
+
+}
+
+}
