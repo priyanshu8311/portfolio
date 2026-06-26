@@ -1408,3 +1408,35 @@ border-color:transparent;
 }
 
 }
+/* ==========================
+   SCROLL REVEAL
+========================== */
+
+.hero,
+.about,
+.skills,
+.projects,
+.education,
+.certifications,
+.resume-section,
+.contact,
+.skill-card,
+.project-card,
+.edu-card,
+.contact-card{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:all .8s ease;
+
+}
+
+.show{
+
+opacity:1 !important;
+
+transform:translateY(0) !important;
+
+}
