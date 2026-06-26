@@ -144,3 +144,55 @@ function revealOnScroll(){
 window.addEventListener("scroll", revealOnScroll);
 
 revealOnScroll();
+// ===============================
+// Back To Top Button
+// ===============================
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 300) {
+
+        topBtn.style.display = "flex";
+
+    } else {
+
+        topBtn.style.display = "none";
+
+    }
+
+});
+
+topBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+});
+
+// ===============================
+// Navbar Shadow on Scroll
+// ===============================
+
+const navbar = document.querySelector("nav");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 50) {
+
+        navbar.style.boxShadow =
+            "0 10px 30px rgba(0,0,0,0.35)";
+
+    } else {
+
+        navbar.style.boxShadow = "none";
+
+    }
+
+});
