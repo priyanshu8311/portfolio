@@ -115,3 +115,32 @@ function typeEffect() {
 }
 
 typeEffect();
+// ===============================
+// Scroll Reveal Animation
+// ===============================
+
+const revealElements = document.querySelectorAll(
+".hero, .about, .skills, .projects, .education, .certifications, .resume-section, .contact, .skill-card, .project-card, .edu-card, .contact-card"
+);
+
+function revealOnScroll(){
+
+    revealElements.forEach((element)=>{
+
+        const windowHeight = window.innerHeight;
+        const revealTop = element.getBoundingClientRect().top;
+        const revealPoint = 120;
+
+        if(revealTop < windowHeight - revealPoint){
+
+            element.classList.add("show");
+
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
